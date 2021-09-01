@@ -1,0 +1,73 @@
+@import './theme/theme';
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: $bg-d;
+  font-family: $primary-font;
+  overflow-x: hidden;
+}
+
+a { font-family: $tertiary-font; }
+
+* { box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: $bg-d;
+  font-family: $secondary-font;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+// Misc. global styles - button components
+.backIcon {
+  color: $secondary;
+  font-weight: 400;
+  transition: transform .3s;
+}
+
+.backIcon:hover {
+  transform: scale(1.15);
+}
+
+.forwardIcon {
+  color: $secondary;
+  font-weight: 400;
+  transition: transform .3s;
+}
+
+.forwardIcon:hover {
+  transform: scale(1.15);
+}
+
+#goback {
+  position: absolute;
+  margin: 0.4rem;
+  background-color: $secondary;
+  color: $light;
+  border: 0;
+  border-radius: 3px;
+  left: 2%;
+  top: 10%;
+  transition: transform .3s;
+}
+
+#goback:hover {
+  transform: scale(1.1);
+}

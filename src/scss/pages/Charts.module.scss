@@ -1,0 +1,89 @@
+@import '../theme/theme';
+
+.container {
+  margin: 0.5rem 0 0 0;
+  padding: 0 0 0.75rem 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+  .header {
+    .title {
+      font-size: 2rem;
+      color:$bg-d;
+      text-align: center;
+      padding-bottom: 0.44rem;
+      font-weight: bold;
+      margin: 0.8rem 0 0 0;
+      border-bottom: calc(0.3px + 0.02em) solid $bg-m;
+    }
+    .subtitle {
+      text-align: center;
+      margin-top: 0.2rem;
+      color: $text-secondary;
+    }
+    #back {
+      margin-top: 0.33rem;
+      background-color: $secondary !important;
+      color: $light;
+      border: 0;
+    }
+  }
+  .content {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .child {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 0.5rem 0;
+      #button {
+        font-size: 1rem;
+        width: auto;
+        text-align: center;
+        margin: 0.44rem;
+        padding: 0.64rem 0.44rem 0.64rem 0.44rem;
+        line-height: 2;
+      }
+    }
+    .subheader {
+      margin-top: 2.5rem;
+      width: 83%;
+      .states {
+        text-align: center;
+        border-bottom: 1px solid $bg-m;
+        margin-bottom: 1.44rem;
+        padding-bottom: 0.44rem;
+      }
+    }
+    .listContainer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      flex-grow: 1;
+      width: 100vw;
+      align-items: center;
+      justify-content: center;
+      #dynamicButton {
+        font-size: 1rem;
+        margin: 0.25rem;
+      }
+    }
+    .chartContainer {
+      margin: 0;
+      padding: 0;
+      min-width: 500px;
+    }
+    .chartContainerWide {
+      margin: 0;
+      padding: 0;
+      min-width: 800px;
+    }
+  }
+}

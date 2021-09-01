@@ -1,0 +1,29 @@
+@import '../theme/theme';
+
+#navcontainer {
+  background-color: $bg-d !important;
+  position: sticky;
+  border-bottom: '1px solid $text-light';
+  display: flex;
+  flex-direction: row;
+}
+
+#listItem {
+  margin: 0 1rem 0 0;
+  padding: 0;
+}
+
+.navLink {
+  font-weight: bold;
+  color: $bg-dark;
+}
+
+#list {
+  font-size: 2rem;
+}
+
+#brand {
+  padding-left: 0.4rem;
+  font-size: 1.85rem;
+  color: $border-color;
+}
